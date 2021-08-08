@@ -12,27 +12,27 @@ app.get('/', function (req, res) {
   res.send('Hello World')
 })
 
-<<<<<<< HEAD
 app.get('/abhinaya', function (req, res) {
   res.json({
     name: "Abhinaya",
     surname: "G.K"
-=======
+  })
+})
+
 app.get('/palak', async (req, res) => {
   /*
   const status = await models.user.create({
     "name": req.query.name,
     "email": req.query.email,
     "mobile": req.query.mobile
->>>>>>> d406bddebac7aedfdc6364306e06eaec0481afd2
   })
   res.json(status)
   */
- res.json(await models.user.findAll())
+  res.json(await models.user.findAll())
 })
 
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
-    console.log(`Server running on : http://localhost:${port}`)
+  console.log(`Server running on : http://localhost:${port}`)
 })
