@@ -8,10 +8,10 @@ app.get('/', function (req, res) {
   res.send('Hello World')
 })
 
-app.get('/palak', function (req, res) {
+app.get('/abhinaya', function (req, res) {
   res.json({
-    name: "Palak",
-    surname: "Singh"
+    name: "Abhinaya",
+    surname: "G.K"
   })
 })
 
